@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h1 class="w3-padding-64"><b>UMKC<br><h3>Cloud Computing</h3></b></h1>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">HOME</a>
+    <a href="#introduction" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Introduction</a>
+    <a href="#objective" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Objective</a>
+    <a href="#data_visual" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">DataAnalysis & Visualizations</a>
+    <a href="#prediction" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Classification & Prediction</a>
+    <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">project Links</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
+  <span>UMKC</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="introduction">
+    <h1 class="w3-jumbo"><b>Autism Data Analysis</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Introduction</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Autism Spectrum Disorder (ASD) is a neurodevelopment condition related with huge medicinal services costs, and early finding can fundamentally decrease these. Tragically, hanging tight occasions for an ASD analysis are extensive and methodology are not practical.
+      The monetary effect of mental imbalance and the expansion in the quantity of ASD cases over the world uncovers an earnest requirement for the advancement of handily executed and viable screening techniques.
+      Accordingly, a period proficient and open ASD screening is unavoidable to help wellbeing experts and illuminate people whether they should seek after formal clinical conclusion.
+    </p>
+    <div class="w3-row-padding">
+      <div class="w3-half">
+        <img src="https://www.genengnews.com/wp-content/uploads/2018/08/Oct17_2017_NIH_Autism4325213801-2.jpg" style="width:100%" onclick="onClick(this)" alt="Autsim">
+      </div>
+
+      <div class="w3-half">
+        <img src="https://whyy.org/wp-content/uploads/2018/04/bigstock-woman-hands-forming-a-heart-pa-177888580.jpg" style="width:100%" onclick="onClick(this)" alt="Autsim">
+      </div>
+      <p>The fast development in the quantity of ASD cases overall requires datasets identified with conduct attributes. Nonetheless, such datasets are uncommon making it hard to perform exhaustive investigations to improve the productivity, affectability, particularity and prescient precision of the ASD screening process.
+        By and by, extremely constrained mental imbalance datasets related with clinical or screening are accessible and the vast majority of them are hereditary in nature.
+        In this informational collection mental imbalance screening of grown-ups that contained 20 highlights to be used for additional investigation particularly in deciding compelling medically introverted attributes and improving the order of ASD cases.
+        In this dataset, we record ten conduct highlights (AQ-10-Adult) in addition to ten people qualities that have end up being successful in recognizing the ASD cases from controls in conduct science.
+      </p>
+  </div>
+
+  <!-- Objective -->
+  <div class="w3-container" id="objective" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Objective</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>•	To do analysis on the Autism Spectrum Disorder (ASD) data of both adults and toddlers datasets by visualizing the data with the help of most influential factors.</p>
+    <p>•	Autism Spectrum disorder is a neuro-development disorder.</p>
+    <p> •	According to CDC I among 59 children are diagnosed with ASD.</p>
+    <p> •	Diagnosis for ASD is a length procedure with significant healthcare costs.</p>
+    <p> •	It requires time-efficient and effective screening methods in order to help the patients.</p>
+     <p> •	Well formatted datasets will helps us to study the behavioural characteristics and analyse properly for better screening procedures.</p>
+  </div>
+
+  <!-- DataAnalysis & Visualizations -->
+  <div class="w3-container" id="data_visual" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>DataAnalysis & Visualizations</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <!-- Photo grid (modal) -->
+    <div class="w3-row-padding">
+      <p> We done the Data in analysis in GoogleColab and Juypter notebook using python3. We consider adults and toddlers datasets. Here is some visualization performed on the adult and toddler dataset.</p>
+      <p><b>visualization of jaundice born child based on gender</b>:</p>
+      <p>From the above visualize, almost 6-7 more in adults and 2-3 times more in toddlers of non-jaundice born ASD positive whereas according to reports that is around 10 times.
+        Jaundice born child have a weak link with ASD. And ASD is also more common among boys than girls.</p>
+
+      <div class="w3-half">
+        <img src="1.png" style="width:100%" onclick="onClick(this)" alt="ASD positive Adults born with jaundice based on gender">
+        <img src="3.png" style="width:100%" onclick="onClick(this)" alt="ASD Negative Adults born with jaundice based on gender">
+      </div>
+      <div class="w3-half">
+        <img src="2.png" style="width:100%" onclick="onClick(this)" alt="ASD positive Toddlers born with jaundice based on gender">
+        <img src="4.png" style="width:100%" onclick="onClick(this)" alt="ASD Negative Toddlers born with jaundice based on gender">
+      </div>
+      <p><b>visualization of the age distribution of child</b>:</p>
+      <img src="df1_age.png" style="width:100%" onclick="onClick(this)" alt="Child Age distribution in months">
+      <p><b>visualization of the age distribution of Adult</b>:</p>
+      <img src="df2_age.png" style="width:100%" onclick="onClick(this)" alt="Adult Age distribution in years">
+      <p><b>visualization of the age distribution of ASD positive and negative</b>:</p>
+      <p> Visualization of the age distribution child and adult in the dataset
+        Here, in adults most of the ASD positive are around 20 or 30 years of age, whereas for toddlers most of them are around 36 months. As we see, when adults age increases the number decreases, whereas in toddlers age increases the number increases. So with autism develop strategies adults can improve health.
+      </p>
+      <img src="age_positve.png" style="width:100%" onclick="onClick(this)" alt="ASD positve age distribution">
+      <img src="age_negative.png" style="width:100%" onclick="onClick(this)" alt="ASD negative age distribution">
+      <p><b>visulization of all people living in different countries</b>:</p>
+      <img src="country.png" style="width:100%" onclick="onClick(this)" alt="visulization of all people living in different countries">
+      <p><b>visualization positive and Negative ASD Adults based on top 15 countries</b>:</p>
+      <p>First, we visualize the no of adults living in different places. From that plot majority counts in United States. Second we visualize the positive ASD based on the top 15 countries.
+        The developed countries like UK, US, Australia, Canada indeed are the most affected ones. But we can see that female population distinguishable compare to males, which is quite contrary.</p>
+      <img src="country_vs_gender.png" style="width:100%" onclick="onClick(this)" alt="positive ASD Adults based on top 15 countries">
+      <p>When we visualize the negative ASD Adults based on top 15 countries, United Arab Emirates, India and New Zealand are top 3 countries with negative ASD.</p>
+      <img src="country_vs_gender_neg.png" style="width:100%" onclick="onClick(this)" alt="Negative ASD Adults based on top 15 countries">
+      <p><b>visualization the ethnicity of adults and toddlers based on gender in ASD positive and negative</b>:</p>
+      <p>Here, first we visualize the ethnicity of adults and toddlers based on gender in ASD positive and negative. Second, we count the ethnicity value counts. White and European ethnicities data overshadows the rest.</p>
+      <div class="w3-half">
+          <img src="eth_gender_Apos.png" style="width:100%" onclick="onClick(this)" alt="visualization the ethnicity of adluts based on gender in ASD positive">
+          <img src="eth_gender_Tpos.png" style="width:100%" onclick="onClick(this)" alt="visualization the ethnicity of adluts based on gender in ASD negative">
+      </div>
+      <div class="w3-half">
+          <img src="eth_gender_Apos.png" style="width:100%" onclick="onClick(this)" alt="visualization the ethnicity of toddlers based on gender in ASD positive">
+          <img src="eth_gender_Tneg.png" style="width:100%" onclick="onClick(this)" alt="visualization the ethnicity of toddlers based on gender in ASD negative">
+      </div>
+      <p><b>visualization of the positve ASD distribution of Adult White and European ethnicity based on top 15 countries</b>:</p>
+      <p>Here, we can see that above graph compared the country wise distribution looks same for top 5 countries US, UK, Australia, NZ and Canada thus affirming their positions as top contributors of positive ASD.</p>
+      <img src="country_15.png" style="width:100%" onclick="onClick(this)" alt="Positive ASD of White and European Ethnicities country wise distribution">
+      <p><b>visualization the ethnicity value counts of ASD positive and negative</b>:</p>
+      <div class="w3-half">
+        <img src="eth.png" style="width:100%" onclick="onClick(this)" alt="visualization the ethnicity value counts of ASD positve and negative">
+        <img src="ethTp.png" style="width:100%" onclick="onClick(this)" alt="visualization the ethnicity value counts of ASD positve and negative">
+      </div>
+      <div class="w3-half">
+        <img src="ethAn.png" style="width:100%" onclick="onClick(this)" alt="visualization the ethnicity value counts of ASD positve and negative">
+        <img src="ethTn.png" style="width:100%" onclick="onClick(this)" alt="visualization the ethnicity value counts of ASD positve and negative">
+      </div>
+      <p><b>visualization of the distribution of autism in family within different ethnicity for ASD positive and Negative</b>:</p>
+      <p>Here, we can observe that both in Adults and Toddlers, White and Europeans Ethnicities have very high chance of begin ASD positive if they have it in their genes.
+        Blacks and Asians follow the next though with smaller ratios. We cannot conclude anything firmly, but we can stay confident that there is a genetic link for ASD positive as backed by studies.</p>
+      <img src="adults_relative.png" style="width:100%" onclick="onClick(this)" alt="Positive ASD Adult relatives with Autism distribution for different ethnicities">
+      <img src="Tp_relative.png" style="width:100%" onclick="onClick(this)" alt="Negative ASD Adult relatives with Autism distribution for different ethnicities">
+      <p><b>visualization of the age distribution of Adult</b>:</p>
+      <img src="An_relative.png" style="width:100%" onclick="onClick(this)" alt="Positive ASD Toddler relatives with Autism distribution for different ethnicities">
+      <img src="Tn_relative.png" style="width:100%" onclick="onClick(this)" alt="Negative ASD Toddler relatives with Autism distribution for different ethnicities">
+
+    </div>
+  </div>
+
+  <!-- prediction -->
+  <div class="w3-container" id="prediction" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Classification & Prediction</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>We formed three predictions models. Logistic Regression, Random Forrest Classifier and K-NN Classifier.  Logistic regression is a statistical model that in its basic form uses a logistic function to model a binary dependent variable, although many more complex extensions exist.
+      In regression analysis, logistic regression is estimating the parameters of a logistic model.
+      Random Forest are an ensemble learning method for classification, regression and other tasks that operate by constructing a multitude of decision trees at training time and outputting the class that is the mode of the classes.
+    </p>
+    <div class="w3-row-padding">
+
+      <div class="w3-half">
+        <img src="p1.png" style="width:100%" onclick="onClick(this)" alt="Logistic Regression">
+      </div>
+      <div class="w3-half">
+        <img src="p2.png" style="width:100%" onclick="onClick(this)" alt="Random Forest Classifier">
+      </div>
+      <p>Knn is a method used for classification and regression.
+        In K-NN classification, the output is a class membership. An object is classified by a classified by a plurality vote of its neighbours, with the object begin assigned to the class most common among its k nearest neighbours.
+        If k=1 then the object is simply assigned to the class of that single nearest neighbour.</p>
+      <div class="w3-half">
+        <img src="Error_vs_kvalue.PNG" style="width:100%" onclick="onClick(this)" alt="Error_vs_kvalue">
+      </div>
+      <div class="w3-half">
+        <img src="p3.png" style="width:100%" onclick="onClick(this)" alt="Knn classifier">
+      </div>
+    <p>Among all three models K-NN is the best model as it shows the best results.  According to the logistic model the accuracy is 63%, random forest accuracy is 70% and K-NN model accuracy is 71%. So K-NN is best model.
+    </p>
+  </div>
+
+  <!-- Project Details  -->
+  <div class="w3-container" id="team" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Project details & links</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+      <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" class="w3-image">
+        <p id="caption"></p>
+      </div>
+    </div>
+
+  </div>
+    <div><p>Link to the GIThub <a href="https://github.com/Sreesudham/CLOUDPROJECT" title="W3.CSS" target="_blank" class="w3-hover-opacity w3-text-blue">GIT Hub</a></p></div>
+    <br>
+    <div><p>Link to the Trelo Account <a href="https://trello.com/b/g1hUCEKs/autism-data-analysis" title="W3.CSS" target="_blank" class="w3-hover-opacity w3-text-blue">Trelo account</a></p></div>
+    <br>
+    <!-- The Team -->
+    <P><b>Team members</b></P>
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="pavan.jpg" alt="pavan" style="width:100%">
+        <div class="w3-container">
+          <h3>Pavan Kumar Chongala</h3>
+          <p class="w3-opacity">16273361</p>
+          <p class="w3-opacity">scvkp@mail.umkc.edu</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://cdn4.vectorstock.com/i/1000x1000/35/53/person-icon-female-user-profile-avatar-vector-18833553.jpg" alt="Tanmaiyee" style="width:100%">
+        <div class="w3-container">
+          <h3>Naga Tanmaiyee Nagalla</h3>
+          <p class="w3-opacity">16286145</p>
+          <p class="w3-opacity">nnagalla@mail.umkc.edu</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://cdn4.vectorstock.com/i/1000x1000/35/53/person-icon-female-user-profile-avatar-vector-18833553.jpg" alt="sudha" style="width:100%">
+        <div class="w3-container">
+          <h3>Venkata Sreesudha Madabhushi</h3>
+          <p class="w3-opacity"></p>
+          <p class="w3-opacity">vm8cp@mail.umkc.edu</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:30px"><p class="w3-right">Done by <a href="https://github.com/srikarpavan/cloud-computing-autism-data-analysis" title="W3.CSS" target="_blank" class="w3-hover-opacity">PTS</a></p></div>
+  </div>
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+</body>
+</html>
